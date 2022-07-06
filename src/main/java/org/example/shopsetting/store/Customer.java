@@ -12,7 +12,7 @@ public class Customer implements CustomerDuty {
 
     @Override
     public void iCanBuy(Product product) {
-        if (product.getQuantity() < product.getAmount()) {
+        if (product.getQuantity() < product.getUnitPrice()) {
             System.out.println("I can't afford it");
         }
 

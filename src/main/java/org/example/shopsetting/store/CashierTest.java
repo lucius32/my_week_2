@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CashierTest {
-    Product product = new Product("Bags", 500, 3);
+    Product product = new Product("Cookies", "ArrowRoot", 77, 2.18);
     @Test
     void iCanSellAndGiveReceipts() {
         Cashier cashier = new Cashier("Uche", "male", "2");
         cashier.iCanSellAndGiveReceipts(product);
-        assertEquals(product.getAmount(), 500);
+        assertEquals(product.getUnitPrice(), 500);
     }
 }

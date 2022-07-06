@@ -1,5 +1,7 @@
 package org.example.shopsetting.store;
 
+import java.util.List;
+
 public abstract class Staff{
     private String name;
     private String identity;
@@ -34,4 +36,6 @@ public abstract class Staff{
     public void setStaffId(String staffId) {
         this.staffId = staffId;
     }
+
+    public abstract void iCanSellAndGiveReceipts(List<Product> products, String s);
 }
